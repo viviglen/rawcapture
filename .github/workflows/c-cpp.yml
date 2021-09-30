@@ -16,3 +16,11 @@ jobs:
 
     - name: make
       run: sudo apt -y install gcc-aarch64-linux-gnu && make
+
+    - name : upload bin
+      uses: actions/upload-artifact@master
+      if: always()
+      with:
+          name: rawcapture
+          path: ${{ github.workspace }}/rawcapture
+          
