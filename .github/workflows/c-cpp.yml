@@ -13,5 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name：install aarch64-linux-gnu
+      run： apt -y install gcc-aarch64-linux-gnu
     - name: make
       run: make
