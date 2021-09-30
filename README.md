@@ -20,6 +20,9 @@ start capture...
 -1[Bad address]: 33 33 00 00 00 16 12 34 56 78 9a bc 86 dd 60 00 00 00 00 60 00 01 00 00 00 00 00 00 00 00 00 00
 ```
 ---
-```mermaid
-DESTINATION ADDRESS[6 OCTETS]
+```c
+
+data struct:
+    [6 OCTETS]                 [6 OCTETS]             [2 OCTETS]        [46 TO 1500 OR 1504 OR 1982 OCTETS]
+DESTINATION ADDRESS          SOURCE ADDRESS          LENGTH/TYPE          MAC CLIENT DATA(SEE 3.2.7)/PAD
 ```
