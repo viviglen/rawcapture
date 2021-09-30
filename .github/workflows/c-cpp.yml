@@ -24,3 +24,9 @@ jobs:
           name: rawcapture
           path: ${{ github.workspace }}/rawcapture
           
+    - name: tar
+      uses: actions/upload-artifact@v2
+      with:
+        name: build
+        path: rawcapture
+    
